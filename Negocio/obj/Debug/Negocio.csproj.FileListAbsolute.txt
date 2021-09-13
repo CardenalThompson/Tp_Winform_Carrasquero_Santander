@@ -1,0 +1,9 @@
+C:\Users\ITNM\source\repos\TPWinForm_Carrasquero_Santander\Negocio\bin\Debug\Negocio.dll
+C:\Users\ITNM\source\repos\TPWinForm_Carrasquero_Santander\Negocio\bin\Debug\Negocio.pdb
+C:\Users\ITNM\source\repos\TPWinForm_Carrasquero_Santander\Negocio\bin\Debug\Dominio.dll
+C:\Users\ITNM\source\repos\TPWinForm_Carrasquero_Santander\Negocio\bin\Debug\Dominio.pdb
+C:\Users\ITNM\source\repos\TPWinForm_Carrasquero_Santander\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\ITNM\source\repos\TPWinForm_Carrasquero_Santander\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\ITNM\source\repos\TPWinForm_Carrasquero_Santander\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\ITNM\source\repos\TPWinForm_Carrasquero_Santander\Negocio\obj\Debug\Negocio.dll
+C:\Users\ITNM\source\repos\TPWinForm_Carrasquero_Santander\Negocio\obj\Debug\Negocio.pdb

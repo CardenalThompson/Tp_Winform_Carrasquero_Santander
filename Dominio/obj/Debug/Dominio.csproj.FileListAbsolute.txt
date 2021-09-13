@@ -1,0 +1,5 @@
+C:\Users\ITNM\source\repos\TPWinForm_Carrasquero_Santander\Dominio\bin\Debug\Dominio.dll
+C:\Users\ITNM\source\repos\TPWinForm_Carrasquero_Santander\Dominio\bin\Debug\Dominio.pdb
+C:\Users\ITNM\source\repos\TPWinForm_Carrasquero_Santander\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\ITNM\source\repos\TPWinForm_Carrasquero_Santander\Dominio\obj\Debug\Dominio.dll
+C:\Users\ITNM\source\repos\TPWinForm_Carrasquero_Santander\Dominio\obj\Debug\Dominio.pdb
