@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Negocio;
+using Dominio;
 
 namespace Presentacion
 {
@@ -24,7 +26,10 @@ namespace Presentacion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-
+            Form menuP = new menuPrincipal() as Form;
+            menuP.Show();
+            this.Hide();
+            //Application.Run(new menuPrincipal());
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -34,6 +39,15 @@ namespace Presentacion
 
         private void txtnombre_TextChanged(object sender, EventArgs e)
         {
+
+            if (txtnombre.Text != string.Empty)
+            {
+                btnIngresar.Enabled = true;
+            }
+            else
+            {
+                btnIngresar.Enabled = false;
+            }
             //if (txtnombre.Text.Trim() != String.Empty && txtnombre.Text.All(char.IsLetter)) // si no esta vacio y todas son letras
             //{
             //    btnIngresar.Enabled = true;
@@ -52,6 +66,8 @@ namespace Presentacion
             //    btnIngresar.Enabled = false;
             //}
         }
+
+   
 
     }
 }

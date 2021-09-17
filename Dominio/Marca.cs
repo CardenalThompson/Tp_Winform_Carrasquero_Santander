@@ -9,13 +9,9 @@ namespace Dominio
     public class Marca
     {
         public int id { get; set; }
-
         public string nombre { get; set; }
 
-        public Marca()
-        {
-
-        }
+        public Marca(){}
         public Marca(int Id, string nom)
         {
             id = Id;
