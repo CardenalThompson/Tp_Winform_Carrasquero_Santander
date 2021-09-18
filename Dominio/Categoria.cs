@@ -16,6 +16,12 @@ namespace Dominio
             id = Id;
             nombre = nom;
         }
+
+        public Categoria(string nom)
+        {
+            nombre = nom;
+        }
+
         public override string ToString()
         {
             return nombre;

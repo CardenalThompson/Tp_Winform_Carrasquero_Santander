@@ -41,9 +41,9 @@ namespace Presentacion
             // 
             this.panel1.BackColor = System.Drawing.Color.Gold;
             this.panel1.Controls.Add(this.labelMenuPrincipal);
-            this.panel1.Location = new System.Drawing.Point(-1, -2);
+            this.panel1.Location = new System.Drawing.Point(12, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(802, 86);
+            this.panel1.Size = new System.Drawing.Size(810, 86);
             this.panel1.TabIndex = 0;
             // 
             // labelMenuPrincipal
@@ -84,19 +84,20 @@ namespace Presentacion
             // 
             this.panelMenu.Location = new System.Drawing.Point(174, 90);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(627, 357);
+            this.panelMenu.Size = new System.Drawing.Size(648, 409);
             this.panelMenu.TabIndex = 7;
             // 
             // menuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(834, 511);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.panel1);
             this.Name = "menuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "menuPrincipal";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

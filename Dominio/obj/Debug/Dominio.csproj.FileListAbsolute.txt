@@ -9,3 +9,9 @@ C:\Users\Tomas Santander\Source\Repos\CardenalThompson\Tp_Winform_Carrasquero_Sa
 C:\Users\Tomas Santander\Source\Repos\CardenalThompson\Tp_Winform_Carrasquero_Santander\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Tomas Santander\Source\Repos\CardenalThompson\Tp_Winform_Carrasquero_Santander\Dominio\obj\Debug\Dominio.dll
 C:\Users\Tomas Santander\Source\Repos\CardenalThompson\Tp_Winform_Carrasquero_Santander\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Tomas Santander\Desktop\Tp_Winform_Carrasquero_Santander\Dominio\bin\Debug\Dominio.dll
+C:\Users\Tomas Santander\Desktop\Tp_Winform_Carrasquero_Santander\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Tomas Santander\Desktop\Tp_Winform_Carrasquero_Santander\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\Tomas Santander\Desktop\Tp_Winform_Carrasquero_Santander\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Tomas Santander\Desktop\Tp_Winform_Carrasquero_Santander\Dominio\obj\Debug\Dominio.dll
+C:\Users\Tomas Santander\Desktop\Tp_Winform_Carrasquero_Santander\Dominio\obj\Debug\Dominio.pdb

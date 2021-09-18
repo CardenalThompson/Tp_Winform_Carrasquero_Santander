@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
+
 namespace Presentacion
 {
     public partial class menuPrincipal : Form
@@ -12,7 +13,8 @@ namespace Presentacion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-           formPanel(new FormDgv());
+            formPanel(new FormDgv());
+            
         }
 
         private void formPanel(object FormH)

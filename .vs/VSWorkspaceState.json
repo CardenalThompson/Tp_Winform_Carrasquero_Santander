@@ -3,8 +3,7 @@
     "",
     "\\Dominio",
     "\\Negocio",
-    "\\Presentacion",
-    "\\Presentacion\\Properties"
+    "\\Presentacion"
   ],
   "SelectedNode": "\\Presentacion\\FormBienvenida.cs",
   "PreviewInSolutionExplorer": false

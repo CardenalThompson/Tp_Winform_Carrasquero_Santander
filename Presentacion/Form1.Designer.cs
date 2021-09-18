@@ -29,34 +29,51 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvLista = new System.Windows.Forms.DataGridView();
+            this.pbxLista = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLista)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvLista
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 1);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(786, 199);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLista.Location = new System.Drawing.Point(2, 1);
+            this.dgvLista.Name = "dgvLista";
+            this.dgvLista.Size = new System.Drawing.Size(786, 148);
+            this.dgvLista.TabIndex = 0;
+            this.dgvLista.SelectionChanged += new System.EventHandler(this.dgvLista_SelectionChanged);
+            this.dgvLista.MouseHover += new System.EventHandler(this.dgvLista_MouseHover);
+            // 
+            // pbxLista
+            // 
+            this.pbxLista.Location = new System.Drawing.Point(227, 155);
+            this.pbxLista.Name = "pbxLista";
+            this.pbxLista.Size = new System.Drawing.Size(312, 261);
+            this.pbxLista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxLista.TabIndex = 1;
+            this.pbxLista.TabStop = false;
+            this.pbxLista.Resize += new System.EventHandler(this.dgvLista_SelectionChanged);
             // 
             // FormDgv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(790, 450);
+            this.Controls.Add(this.pbxLista);
+            this.Controls.Add(this.dgvLista);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormDgv";
             this.Text = "FormDgv";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLista)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvLista;
+        private System.Windows.Forms.PictureBox pbxLista;
     }
 }
