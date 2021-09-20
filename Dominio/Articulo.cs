@@ -16,5 +16,15 @@ namespace Dominio
         public Marca marca { get; set; }
         public Categoria categoria { get; set; }
         public decimal precio { get; set; }
+
+        public Articulo()
+        {
+            this.codigo = string.Empty;
+            this.nombre = string.Empty;
+            this.descripcion = string.Empty;
+            this.imagen = string.Empty;
+            this.marca = new Marca();
+            this.categoria = new Categoria();
+        }
     }
 }

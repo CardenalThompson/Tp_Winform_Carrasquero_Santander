@@ -27,8 +27,8 @@ namespace Presentacion
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             Form menuP = new menuPrincipal() as Form;
-            menuP.Show();
-            this.Hide();
+            menuP.ShowDialog();
+            //this.Hide();
             //Application.Run(new menuPrincipal());
         }
 
@@ -48,23 +48,23 @@ namespace Presentacion
             {
                 btnIngresar.Enabled = false;
             }
-            //if (txtnombre.Text.Trim() != String.Empty && txtnombre.Text.All(char.IsLetter)) // si no esta vacio y todas son letras
-            //{
-            //    btnIngresar.Enabled = true;
-            //    errorProvider1.SetError(tbnombre, "");
-            //}
-            //else
-            //{
-            //    if (!(txtnombre.Text.All(char.IsLetter)))   // si no son todas letras
-            //    {
-            //        errorProvider1.SetError(txtnombre, "el nombre solo debe contener letras");
-            //    }
-            //    else
-            //    {
-            //        errorProvider1.SetError(txtnombre, "tiene que ingresar un nombre");
-            //    }
-            //    btnIngresar.Enabled = false;
-            //}
+            if (txtnombre.Text.Trim() != String.Empty && txtnombre.Text.All(char.IsLetter)) // si no esta vacio y todas son letras
+            {
+                btnIngresar.Enabled = true;
+                errorProvider2.SetError(txtnombre, "");
+            }
+            else
+            {
+                if (!(txtnombre.Text.All(char.IsLetter)))   // si no son todas letras
+                {
+                    errorProvider2.SetError(txtnombre, "el nombre solo debe contener letras");
+                }
+                else
+                {
+                    errorProvider2.SetError(txtnombre, "tiene que ingresar un nombre");
+                }
+                btnIngresar.Enabled = false;
+            }
         }
 
    

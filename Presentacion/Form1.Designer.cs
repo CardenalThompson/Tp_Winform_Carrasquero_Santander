@@ -31,6 +31,7 @@ namespace Presentacion
         {
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.pbxLista = new System.Windows.Forms.PictureBox();
+            this.btnDetalles = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLista)).BeginInit();
             this.SuspendLayout();
@@ -42,6 +43,7 @@ namespace Presentacion
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.Size = new System.Drawing.Size(786, 148);
             this.dgvLista.TabIndex = 0;
+            this.dgvLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLista_CellContentClick);
             this.dgvLista.SelectionChanged += new System.EventHandler(this.dgvLista_SelectionChanged);
             this.dgvLista.MouseHover += new System.EventHandler(this.dgvLista_MouseHover);
             // 
@@ -53,13 +55,27 @@ namespace Presentacion
             this.pbxLista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxLista.TabIndex = 1;
             this.pbxLista.TabStop = false;
+            this.pbxLista.Click += new System.EventHandler(this.pbxLista_Click);
             this.pbxLista.Resize += new System.EventHandler(this.dgvLista_SelectionChanged);
+            // 
+            // btnDetalles
+            // 
+            this.btnDetalles.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnDetalles.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDetalles.Location = new System.Drawing.Point(13, 189);
+            this.btnDetalles.Name = "btnDetalles";
+            this.btnDetalles.Size = new System.Drawing.Size(150, 45);
+            this.btnDetalles.TabIndex = 2;
+            this.btnDetalles.Text = "Detalles";
+            this.btnDetalles.UseVisualStyleBackColor = false;
+            this.btnDetalles.Click += new System.EventHandler(this.btnDetalles_Click);
             // 
             // FormDgv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(790, 450);
+            this.Controls.Add(this.btnDetalles);
             this.Controls.Add(this.pbxLista);
             this.Controls.Add(this.dgvLista);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -75,5 +91,6 @@ namespace Presentacion
 
         private System.Windows.Forms.DataGridView dgvLista;
         private System.Windows.Forms.PictureBox pbxLista;
+        private System.Windows.Forms.Button btnDetalles;
     }
 }

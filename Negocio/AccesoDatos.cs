@@ -10,9 +10,9 @@ namespace Negocio
 {
     public class AccesoDatos
     {
-        private SqlConnection conexion;
-        private SqlCommand comando;
-        private SqlDataReader lector;
+        private SqlConnection conexion { get; set; }
+        private SqlCommand comando { get; set; }
+        private SqlDataReader lector { get; set; }
 
         public AccesoDatos()
         {
@@ -50,6 +50,23 @@ namespace Negocio
             comando.Connection = conexion;
             conexion.Open();
             comando.ExecuteNonQuery();
+        }
+
+        public void conectar()
+        {
+            conexion.Open();
+        }
+
+        public SqlDataReader leer()
+        {
+            comando.Connection = conexion;
+            conexion.Open();
+            lector = comando.ExecuteReader();
+            return lector;
+        }
+        public void agregarParametro(string nombre, object valor)
+        {
+            comando.Parameters.AddWithValue(nombre, valor);
         }
 
     }

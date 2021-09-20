@@ -16,6 +16,8 @@ namespace Presentacion
 {
     public partial class FormDgv : Form
     {
+        private string IMAGEN_DEFAULT = @"https://i.ytimg.com/vi/-6vnomecItA/maxresdefault.jpg";
+        
         public FormDgv()
         {
             InitializeComponent();
@@ -56,23 +58,40 @@ namespace Presentacion
            
         }
 
-        private void RecargarImg(string imagen)
+        private void RecargarImg(string imagen = null)
         {
             try
             {
                 pbxLista.Load(imagen);
             }
             catch (Exception)
-            {                
-                pbxLista.Load("https://i.ytimg.com/vi/-6vnomecItA/maxresdefault.jpg");
-                // throw;
+            {
+                pbxLista.Load(IMAGEN_DEFAULT);
             }
         }
 
         private void dgvLista_SelectionChanged(object sender, EventArgs e)
         {
             Articulo seleccionado = (Articulo)dgvLista.CurrentRow.DataBoundItem;
+
+
+
             RecargarImg(seleccionado.imagen);
+        }
+
+        private void pbxLista_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvLista_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var algo = sender;
+        }
+
+        private void btnDetalles_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

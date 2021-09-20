@@ -32,8 +32,10 @@ namespace Presentacion
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelMenuPrincipal = new System.Windows.Forms.Label();
             this.btnIngresar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnVolver = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,9 +43,9 @@ namespace Presentacion
             // 
             this.panel1.BackColor = System.Drawing.Color.Gold;
             this.panel1.Controls.Add(this.labelMenuPrincipal);
-            this.panel1.Location = new System.Drawing.Point(12, -2);
+            this.panel1.Location = new System.Drawing.Point(2, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(810, 86);
+            this.panel1.Size = new System.Drawing.Size(835, 86);
             this.panel1.TabIndex = 0;
             // 
             // labelMenuPrincipal
@@ -69,16 +71,16 @@ namespace Presentacion
             this.btnIngresar.UseVisualStyleBackColor = false;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
-            // button1
+            // btnBuscar
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 178);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 47);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Buscar articulo";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBuscar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(12, 178);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(156, 47);
+            this.btnBuscar.TabIndex = 6;
+            this.btnBuscar.Text = "Buscar articulo";
+            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // panelMenu
             // 
@@ -87,13 +89,39 @@ namespace Presentacion
             this.panelMenu.Size = new System.Drawing.Size(648, 409);
             this.panelMenu.TabIndex = 7;
             // 
+            // btnVolver
+            // 
+            this.btnVolver.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.Location = new System.Drawing.Point(12, 449);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(156, 47);
+            this.btnVolver.TabIndex = 8;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(12, 244);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(156, 47);
+            this.btnAgregar.TabIndex = 9;
+            this.btnAgregar.Text = "Nuevo Articulo";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
             // menuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 511);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.panelMenu);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.panel1);
             this.Name = "menuPrincipal";
@@ -110,7 +138,9 @@ namespace Presentacion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labelMenuPrincipal;
         private System.Windows.Forms.Button btnIngresar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Button btnAgregar;
     }
 }

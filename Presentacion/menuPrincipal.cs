@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using Dominio;
+using Negocio;
 
 
 namespace Presentacion
@@ -9,11 +11,12 @@ namespace Presentacion
         public menuPrincipal()
         {
             InitializeComponent();
+            formPanel(new FormDgv());
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            formPanel(new FormDgv());
+            //formPanel(new FormDgv());
             
         }
 
@@ -29,6 +32,15 @@ namespace Presentacion
             fh.Show();
         }
 
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FormUpdate editar = new FormUpdate();
+            editar.ShowDialog();
+        }
     }
 }
