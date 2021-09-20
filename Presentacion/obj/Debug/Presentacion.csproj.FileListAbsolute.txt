@@ -65,3 +65,21 @@ C:\Users\ITNM\OneDrive\Escritorio\Tp_Winform_Carrasquero_Santander\Presentacion\
 C:\Users\ITNM\OneDrive\Escritorio\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\ITNM\OneDrive\Escritorio\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\ITNM\OneDrive\Escritorio\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.FormUpdate.resources
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\bin\Debug\Dominio.dll
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\bin\Debug\Negocio.dll
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\bin\Debug\Dominio.pdb
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\bin\Debug\Negocio.pdb
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.FormDgv.resources
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.FormUpdate.resources
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.menuPrincipal.resources
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.FormBienvenida.resources
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.pdb

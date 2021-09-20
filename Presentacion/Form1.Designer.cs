@@ -31,7 +31,7 @@ namespace Presentacion
         {
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.pbxLista = new System.Windows.Forms.PictureBox();
-            this.btnDetalles = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLista)).BeginInit();
             this.SuspendLayout();
@@ -49,7 +49,7 @@ namespace Presentacion
             // 
             // pbxLista
             // 
-            this.pbxLista.Location = new System.Drawing.Point(227, 155);
+            this.pbxLista.Location = new System.Drawing.Point(256, 155);
             this.pbxLista.Name = "pbxLista";
             this.pbxLista.Size = new System.Drawing.Size(312, 261);
             this.pbxLista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -58,24 +58,24 @@ namespace Presentacion
             this.pbxLista.Click += new System.EventHandler(this.pbxLista_Click);
             this.pbxLista.Resize += new System.EventHandler(this.dgvLista_SelectionChanged);
             // 
-            // btnDetalles
+            // btnDelete
             // 
-            this.btnDetalles.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnDetalles.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDetalles.Location = new System.Drawing.Point(13, 189);
-            this.btnDetalles.Name = "btnDetalles";
-            this.btnDetalles.Size = new System.Drawing.Size(150, 45);
-            this.btnDetalles.TabIndex = 2;
-            this.btnDetalles.Text = "Detalles";
-            this.btnDetalles.UseVisualStyleBackColor = false;
-            this.btnDetalles.Click += new System.EventHandler(this.btnDetalles_Click);
+            this.btnDelete.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(12, 155);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(171, 39);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "Eliminar registro";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // FormDgv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(790, 450);
-            this.Controls.Add(this.btnDetalles);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.pbxLista);
             this.Controls.Add(this.dgvLista);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -89,8 +89,8 @@ namespace Presentacion
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvLista;
+        public System.Windows.Forms.DataGridView dgvLista;
         private System.Windows.Forms.PictureBox pbxLista;
-        private System.Windows.Forms.Button btnDetalles;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

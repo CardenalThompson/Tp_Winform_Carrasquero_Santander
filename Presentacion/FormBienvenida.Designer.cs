@@ -162,7 +162,7 @@ namespace Presentacion
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
+      //  private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
     }
 }

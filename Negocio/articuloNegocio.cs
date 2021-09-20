@@ -81,9 +81,9 @@ namespace Negocio
 
         public bool editar(Articulo arti)
         {
+                AccesoDatos conexion = new AccesoDatos();
             try
             {
-                AccesoDatos conexion = new AccesoDatos();
                 conexion.setearConsulta("update ARTICULOS set codigo=@codigo,Nombre=@nombre,Descripcion=@des,idcategoria=@cat,idmarca=@marca,Precio=@precio, ImagenUrl=@imagen where Id=@id ");
 
                 conexion.agregarParametro("@codigo", arti.codigo);
@@ -102,7 +102,32 @@ namespace Negocio
             {
                 return false;
             }
+            finally
+            {
+                conexion.cerrarConexion();
+            }
 
+        }
+
+        public bool eliminar(Articulo arti)
+        {
+            AccesoDatos conexion = new AccesoDatos();
+            try
+            {
+
+                conexion.setearConsulta("delete from ARTICULOS where codigo ='" + arti.codigo + "'");
+                conexion.ejecutarAccion();
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                conexion.cerrarConexion();
+            }
         }
     }
 

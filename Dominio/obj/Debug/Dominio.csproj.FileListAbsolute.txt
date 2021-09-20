@@ -21,3 +21,9 @@ C:\Users\ITNM\OneDrive\Escritorio\Tp_Winform_Carrasquero_Santander\Dominio\obj\D
 C:\Users\ITNM\OneDrive\Escritorio\Tp_Winform_Carrasquero_Santander\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\ITNM\OneDrive\Escritorio\Tp_Winform_Carrasquero_Santander\Dominio\obj\Debug\Dominio.dll
 C:\Users\ITNM\OneDrive\Escritorio\Tp_Winform_Carrasquero_Santander\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Dominio\bin\Debug\Dominio.dll
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Dominio\obj\Debug\Dominio.dll
+C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Dominio\obj\Debug\Dominio.pdb

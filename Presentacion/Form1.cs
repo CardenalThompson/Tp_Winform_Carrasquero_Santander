@@ -89,9 +89,23 @@ namespace Presentacion
             var algo = sender;
         }
 
-        private void btnDetalles_Click(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
+            Articulo seleccionado = (Articulo)dgvLista.CurrentRow.DataBoundItem;
 
+          //  if (seleccionado.codigo != null)
+            //{
+                 DialogResult result = MessageBox.Show("Esta seguro que desea eliminar el registro?", "eliminar registro", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                      ArticuloNegocio artiBusines = new ArticuloNegocio();
+                      artiBusines.eliminar(seleccionado);
+                      MessageBox.Show("El registro se ha eliminado con exito");
+
+                      cargarDgv();
+                }
+
+           // }
         }
     }
 }

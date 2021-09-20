@@ -63,7 +63,7 @@ namespace Presentacion
             // 
             this.btnIngresar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.Location = new System.Drawing.Point(12, 116);
+            this.btnIngresar.Location = new System.Drawing.Point(12, 106);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(156, 47);
             this.btnIngresar.TabIndex = 5;
@@ -74,8 +74,8 @@ namespace Presentacion
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(12, 178);
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(12, 169);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(156, 47);
             this.btnBuscar.TabIndex = 6;
@@ -92,7 +92,7 @@ namespace Presentacion
             // btnVolver
             // 
             this.btnVolver.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.Location = new System.Drawing.Point(12, 449);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(156, 47);
@@ -104,8 +104,8 @@ namespace Presentacion
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(12, 244);
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(12, 231);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(156, 47);
             this.btnAgregar.TabIndex = 9;

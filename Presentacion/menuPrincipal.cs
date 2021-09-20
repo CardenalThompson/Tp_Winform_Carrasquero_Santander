@@ -41,6 +41,12 @@ namespace Presentacion
         {
             FormUpdate editar = new FormUpdate();
             editar.ShowDialog();
+            
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
