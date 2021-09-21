@@ -8,10 +8,12 @@ namespace Presentacion
 {
     public partial class menuPrincipal : Form
     {
+        Form formularioDinamico = null;
         public menuPrincipal()
         {
             InitializeComponent();
-            formPanel(new FormDgv());    
+            formularioDinamico = new FormDgv();
+            formPanel(formularioDinamico);    
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
@@ -39,7 +41,7 @@ namespace Presentacion
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            FormUpdate editar = new FormUpdate();
+            FormUpdate editar = new FormUpdate(this.formularioDinamico);
             editar.ShowDialog();
             
         }
@@ -47,6 +49,11 @@ namespace Presentacion
         private void deleteButton_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void menuPrincipal_Activated(object sender, EventArgs e)
+        {
+
         }
     }
 }

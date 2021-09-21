@@ -127,6 +127,7 @@ namespace Presentacion
             this.Name = "menuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menú Principal";
+            this.Activated += new System.EventHandler(this.menuPrincipal_Activated);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

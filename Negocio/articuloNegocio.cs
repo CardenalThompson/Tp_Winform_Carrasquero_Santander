@@ -12,7 +12,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("select Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.descripcion Categoria,ImagenUrl, Precio from Articulos A left join Marcas M ON A.IdMarca=M.Id left join Categorias C on A.IdCategoria=C.Id");
+                datos.setearConsulta("select A.Id, A.Codigo, A.Nombre, A.Descripcion, M.Descripcion Marca, M.Id IdMarca, C.Id IdCategoria, C.descripcion Categoria,ImagenUrl, Precio from Articulos A left join Marcas M ON A.IdMarca=M.Id left join Categorias C on A.IdCategoria=C.Id");
                 datos.ejecutarLectura();
                 while (datos.Lector.Read())
                 {
@@ -38,11 +38,12 @@ namespace Negocio
 
             try
             {
+                articulo.id = (int)datos.Lector["Id"];
                 articulo.codigo = (string)datos.Lector["Codigo"]; 
                 articulo.nombre = (string)datos.Lector["Nombre"];
                 articulo.descripcion = (string)datos.Lector["Descripcion"];
-                articulo.marca = new Marca((string)datos.Lector["Marca"]);
-                articulo.categoria = new Categoria((string)datos.Lector["Categoria"]);
+                articulo.marca = new Marca((int)datos.Lector["IdMarca"],(string)datos.Lector["Marca"]);
+                articulo.categoria = new Categoria((int)datos.Lector["IdCategoria"],(string)datos.Lector["Categoria"]);
                 articulo.imagen = !(datos.Lector["ImagenUrl"] is DBNull) ? (string)datos.Lector["ImagenUrl"] : string.Empty;
                 articulo.precio = (decimal)datos.Lector["Precio"];
             }

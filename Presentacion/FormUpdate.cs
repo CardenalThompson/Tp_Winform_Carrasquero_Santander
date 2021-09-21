@@ -15,11 +15,12 @@ namespace Presentacion
     public partial class FormUpdate : Form
     {
         private Articulo articulo = null;
-        private FormDgv formcarga = new FormDgv();
+        private Form _formularioDinamico = null;
 
-        public FormUpdate()
+        public FormUpdate(Form formularioDinamico)
         {
             InitializeComponent();
+            _formularioDinamico = formularioDinamico;
         }
 
         public FormUpdate(Articulo arti)
@@ -88,13 +89,14 @@ namespace Presentacion
                     if (articuloNegocio.agregar(articulo))
                     {
                         MessageBox.Show("Se agregó el artículo correctamente");
+                        ((FormDgv)_formularioDinamico).cargarDgv();
                     }
                     else
                     {
                         MessageBox.Show("No se pudo agregar el artículo");
                     }
                 }
-                formcarga.cargarDgv();
+                
                 this.Close();
             }
         }
