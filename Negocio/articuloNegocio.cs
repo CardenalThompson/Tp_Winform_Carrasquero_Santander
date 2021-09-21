@@ -84,7 +84,7 @@ namespace Negocio
                 AccesoDatos conexion = new AccesoDatos();
             try
             {
-                conexion.setearConsulta("update ARTICULOS set codigo=@codigo,Nombre=@nombre,Descripcion=@des,idcategoria=@cat,idmarca=@marca,Precio=@precio, ImagenUrl=@imagen where Id=@id ");
+                conexion.setearConsulta("update ARTICULOS set codigo=@codigo, Nombre=@nombre, Descripcion=@des, idcategoria=@cat, idmarca=@marca, Precio=@precio, ImagenUrl=@imagen where Id=@id ");
 
                 conexion.agregarParametro("@codigo", arti.codigo);
                 conexion.agregarParametro("@nombre", arti.nombre);

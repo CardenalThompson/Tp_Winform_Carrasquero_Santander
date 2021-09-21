@@ -83,3 +83,4 @@ C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentac
 C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\Tomas Santander\Source\Repos\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\ITNM\OneDrive\Escritorio\Tp_Winform_Carrasquero_Santander\Presentacion\obj\Debug\Presentacion.FormDetalle.resources

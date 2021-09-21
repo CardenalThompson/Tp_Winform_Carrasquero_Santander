@@ -11,7 +11,7 @@ namespace Presentacion
         public menuPrincipal()
         {
             InitializeComponent();
-            formPanel(new FormDgv());
+            formPanel(new FormDgv());    
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)

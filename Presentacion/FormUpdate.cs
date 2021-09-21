@@ -15,7 +15,7 @@ namespace Presentacion
     public partial class FormUpdate : Form
     {
         private Articulo articulo = null;
-        private ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+        private FormDgv formcarga = new FormDgv();
 
         public FormUpdate()
         {
@@ -94,6 +94,7 @@ namespace Presentacion
                         MessageBox.Show("No se pudo agregar el artículo");
                     }
                 }
+                formcarga.cargarDgv();
                 this.Close();
             }
         }

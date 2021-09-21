@@ -17,6 +17,7 @@ namespace Presentacion
     public partial class FormDgv : Form
     {
         private string IMAGEN_DEFAULT = @"https://i.ytimg.com/vi/-6vnomecItA/maxresdefault.jpg";
+        Articulo actual = new Articulo();
         
         public FormDgv()
         {
@@ -106,6 +107,16 @@ namespace Presentacion
                 }
 
            // }
+        }
+
+        private void btnDetalles_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dgvLista.CurrentRow.DataBoundItem;
+            FormDetalle detalle = new FormDetalle(seleccionado);
+            detalle.ShowDialog();
+
+            cargarDgv();
+
         }
     }
 }
