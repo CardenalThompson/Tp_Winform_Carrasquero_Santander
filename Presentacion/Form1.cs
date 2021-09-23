@@ -118,5 +118,27 @@ namespace Presentacion
             cargarDgv();
 
         }
+
+        private void btBuscar_Click(object sender, EventArgs e)
+        {
+            List<Articulo> filtrar = listaArticulo.FindAll(x => x.nombre.ToUpper().Contains(tbBuscar.Text.ToUpper()) || x.marca.nombre.ToUpper().Contains(tbBuscar.Text.ToUpper()));
+            dgvLista.DataSource = filtrar;
+        }
+
+        private void tbBuscar_KeyUp(object sender, KeyEventArgs e)
+        {
+            List<Articulo> filtrar = listaArticulo.FindAll(x => x.nombre.ToUpper().Contains(tbBuscar.Text.ToUpper()) ||
+                                                                x.marca.nombre.ToUpper().Contains(tbBuscar.Text.ToUpper()) ||
+                                                                x.codigo.ToUpper().Contains(tbBuscar.Text.ToUpper()) ||
+                                                                x.descripcion.ToUpper().Contains(tbBuscar.Text.ToUpper()) ||
+                                                                x.categoria.nombre.ToUpper().Contains(tbBuscar.Text.ToUpper()));
+            dgvLista.DataSource = filtrar;                 
+        }
+
+        private void LimpiarFiltro()
+        {
+            tbBuscar.Text = string.Empty;
+        }
+
     }
 }

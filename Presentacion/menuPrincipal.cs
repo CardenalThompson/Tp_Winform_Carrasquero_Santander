@@ -13,7 +13,7 @@ namespace Presentacion
         {
             InitializeComponent();
             formularioDinamico = new FormDgv();
-            formPanel(formularioDinamico);    
+            formPanel(formularioDinamico);
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
@@ -44,16 +44,6 @@ namespace Presentacion
             FormUpdate editar = new FormUpdate(this.formularioDinamico);
             editar.ShowDialog();
             
-        }
-
-        private void deleteButton_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void menuPrincipal_Activated(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -31,8 +31,6 @@ namespace Presentacion
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelMenuPrincipal = new System.Windows.Forms.Label();
-            this.btnIngresar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -59,29 +57,6 @@ namespace Presentacion
             this.labelMenuPrincipal.Text = "Menu Principal";
             this.labelMenuPrincipal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnIngresar
-            // 
-            this.btnIngresar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.Location = new System.Drawing.Point(12, 106);
-            this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(156, 47);
-            this.btnIngresar.TabIndex = 5;
-            this.btnIngresar.Text = "Listar Articulos";
-            this.btnIngresar.UseVisualStyleBackColor = false;
-            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(12, 169);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(156, 47);
-            this.btnBuscar.TabIndex = 6;
-            this.btnBuscar.Text = "Buscar articulo";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
             // panelMenu
             // 
             this.panelMenu.Location = new System.Drawing.Point(174, 90);
@@ -105,7 +80,7 @@ namespace Presentacion
             // 
             this.btnAgregar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(12, 231);
+            this.btnAgregar.Location = new System.Drawing.Point(12, 90);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(156, 47);
             this.btnAgregar.TabIndex = 9;
@@ -121,13 +96,10 @@ namespace Presentacion
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.panelMenu);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.panel1);
             this.Name = "menuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menú Principal";
-            this.Activated += new System.EventHandler(this.menuPrincipal_Activated);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -138,8 +110,6 @@ namespace Presentacion
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labelMenuPrincipal;
-        private System.Windows.Forms.Button btnIngresar;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnAgregar;

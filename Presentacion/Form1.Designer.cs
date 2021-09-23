@@ -33,6 +33,8 @@ namespace Presentacion
             this.pbxLista = new System.Windows.Forms.PictureBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnDetalles = new System.Windows.Forms.Button();
+            this.tbBuscar = new System.Windows.Forms.TextBox();
+            this.btBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLista)).BeginInit();
             this.SuspendLayout();
@@ -40,7 +42,8 @@ namespace Presentacion
             // dgvLista
             // 
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLista.Location = new System.Drawing.Point(2, 1);
+            this.dgvLista.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dgvLista.Location = new System.Drawing.Point(2, 44);
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.Size = new System.Drawing.Size(786, 148);
             this.dgvLista.TabIndex = 0;
@@ -50,9 +53,9 @@ namespace Presentacion
             // 
             // pbxLista
             // 
-            this.pbxLista.Location = new System.Drawing.Point(256, 155);
+            this.pbxLista.Location = new System.Drawing.Point(274, 198);
             this.pbxLista.Name = "pbxLista";
-            this.pbxLista.Size = new System.Drawing.Size(312, 261);
+            this.pbxLista.Size = new System.Drawing.Size(274, 249);
             this.pbxLista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxLista.TabIndex = 1;
             this.pbxLista.TabStop = false;
@@ -63,7 +66,7 @@ namespace Presentacion
             // 
             this.btnDelete.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(12, 155);
+            this.btnDelete.Location = new System.Drawing.Point(12, 208);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(171, 39);
             this.btnDelete.TabIndex = 2;
@@ -75,7 +78,7 @@ namespace Presentacion
             // 
             this.btnDetalles.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnDetalles.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDetalles.Location = new System.Drawing.Point(12, 218);
+            this.btnDetalles.Location = new System.Drawing.Point(12, 279);
             this.btnDetalles.Name = "btnDetalles";
             this.btnDetalles.Size = new System.Drawing.Size(171, 39);
             this.btnDetalles.TabIndex = 3;
@@ -83,11 +86,33 @@ namespace Presentacion
             this.btnDetalles.UseVisualStyleBackColor = false;
             this.btnDetalles.Click += new System.EventHandler(this.btnDetalles_Click);
             // 
+            // tbBuscar
+            // 
+            this.tbBuscar.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.tbBuscar.Location = new System.Drawing.Point(12, 10);
+            this.tbBuscar.Name = "tbBuscar";
+            this.tbBuscar.Size = new System.Drawing.Size(383, 20);
+            this.tbBuscar.TabIndex = 4;
+            this.tbBuscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbBuscar_KeyUp);
+            // 
+            // btBuscar
+            // 
+            this.btBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBuscar.Location = new System.Drawing.Point(417, 7);
+            this.btBuscar.Name = "btBuscar";
+            this.btBuscar.Size = new System.Drawing.Size(69, 23);
+            this.btBuscar.TabIndex = 5;
+            this.btBuscar.Text = "Buscar";
+            this.btBuscar.UseVisualStyleBackColor = true;
+            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
+            // 
             // FormDgv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(790, 450);
+            this.Controls.Add(this.btBuscar);
+            this.Controls.Add(this.tbBuscar);
             this.Controls.Add(this.btnDetalles);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.pbxLista);
@@ -98,6 +123,7 @@ namespace Presentacion
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLista)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -107,5 +133,7 @@ namespace Presentacion
         private System.Windows.Forms.PictureBox pbxLista;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnDetalles;
+        private System.Windows.Forms.TextBox tbBuscar;
+        private System.Windows.Forms.Button btBuscar;
     }
 }
